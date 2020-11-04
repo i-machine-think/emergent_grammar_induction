@@ -1,0 +1,24 @@
+[submodule "diora"]
+	path = diora
+	url = https://github.com/iesl/diora
+[submodule "BMM_labels"]
+	path = BMM_labels
+	url = https://github.com/pld/BMM_labels/
+[submodule "glove"]
+	path = glove
+	url = https://github.com/stanfordnlp/GloVe
+[submodule "ccl"]
+	path = ccl
+	url = https://github.com/DrDub/cclparser
+[submodule "submodules/diora"]
+	path = submodules/diora
+	url = https://github.com/iesl/diora.git
+[submodule "submodules/glove"]
+	path = submodules/glove
+	url = https://github.com/stanfordnlp/GloVe.git
+[submodule "submodules/BMM_labels"]
+	path = submodules/BMM_labels
+	url = https://github.com/pld/BMM_labels.git
+[submodule "submodules/ccl"]
+	path = submodules/ccl
+	url = https://github.com/DrDub/cclparser.git
