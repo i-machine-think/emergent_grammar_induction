@@ -28,7 +28,7 @@ The resulting grammar is further analysed to study the syntactic properties of t
 Because `emergent_grammar_induction` does not require any information on the setting of the language emergence, this analysis framework is not limited to certain games and input scenarios.
 
 `emergent_grammar_induction` relies on several *unsupervised grammar induction* techniques.
-In a two-stage setup either [`CCL`](https://www.aclweb.org/anthology/P07-1049.pdf) or [`DIORA`](https://arxiv.org/pdf/1904.02142.pdf) are used for inducing the constituency structure and [`BMM`](https://eprints.illc.uva.nl/274/1/PP-2007-40.text.pdf) for labelling this structure.
+In a two-stage setup either [`CCL`](https://www.aclweb.org/anthology/P07-1049.pdf) or [`DIORA`](https://arxiv.org/pdf/1904.02142) are used for inducing the constituency structure and [`BMM`](https://eprints.illc.uva.nl/274/1/PP-2007-40.text.pdf) for labelling this structure.
 
 ## Requirements
 The recommended (and supported) way to use the grammar induction setup is by using [Docker](https://www.docker.com/), since this setup consists of multiple modules implemented in different programming languages by different people.
@@ -254,18 +254,14 @@ docker run --rm --gpus all \
 
 **TODO**
 
-First, download the dataset:
+The emergent languages used in the paper can be found in `data/simple-referential-game/`.
+Before starting the experiment, make sure your `results/` is empty or does not exist yet, because these files could be overwritten.
+
+You can use `scripts/run_reproduce_paper.sh` for analysing these emergent languages:
 
 ```
-git clone https://github.com/i-machine-think/emergent_dataset.git
-```
-
-Make sure your `results/` is empty or does not exist yet, because the files could be overwritten.
-Then you can use `scripts/run_reproduce_paper.sh` for analysing these emergent languages:
-
-```
-bash scripts/run_reproduce_paper.sh emergent_dataset/ ccl # For using CCL as constituency parser
-bash scripts/run_reproduce_paper.sh emergent_dataset/ diora # For using DIORA as constituency parser
+bash scripts/run_reproduce_paper.sh data/simple-referential-game/ ccl # For using CCL as constituency parser
+bash scripts/run_reproduce_paper.sh data/simple-referential-game/ diora # For using DIORA as constituency parser
 ```
 
 The resulting grammars and analysis metrics can be found in `results/`. Specifically,
