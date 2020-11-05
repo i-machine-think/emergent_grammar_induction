@@ -19,6 +19,7 @@ This repository contains a two-stage grammar induction setup for analysing langu
 * [Examples](#examples)
 * [Reproduce our paper](#reproduce-our-paper)
 * [Build EGI yourself](#build-egi-yourself)
+* [Troubleshooting](#troubleshooting)
 
 ## Overview
 You can use `emergent_grammar_induction` for analysing the syntactic structures of an emergent language.
@@ -290,4 +291,18 @@ To test whether the build works correctly, you can run the induction on `demo_la
 
 ```
 docker run --rm -v $(pwd)/results/:/usr/src/app/results/grammars emergent_grammar_induction
+```
+
+## Troubleshooting
+
+In case you want to interrupt a running experiment, you can use `docker stop` with the Docker container name (if you have used the flag `--name`) or its ID:
+
+```
+docker stop <CONTAINER-ID/CONTAINER-NAME>
+```
+
+The IDs of all running experiments (Docker containers) can be found with:
+
+```
+docker ps
 ```
