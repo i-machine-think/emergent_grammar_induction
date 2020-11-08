@@ -1,6 +1,7 @@
 # emergent_grammar_induction
 
-![Docker Pulls](https://img.shields.io/docker/pulls/oskarvanderwal/emergent-grammar-induction)
+![GitHub](https://img.shields.io/github/license/i-machine-think/emergent_grammar_induction)
+[![Docker Image](https://img.shields.io/static/v1?label=image&message=Docker&color=1488C6&logo=docker)](https://hub.docker.com/r/oskarvanderwal/emergent-grammar-induction)
 
 > A toolkit for finding and analysing the grammars of emergent languages.
 
