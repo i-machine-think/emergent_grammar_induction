@@ -6,7 +6,20 @@
 > A toolkit for finding and analysing the grammars of emergent languages.
 
 This repository contains a two-stage grammar induction setup for analysing languages emerging in referential and other games.
-`emergent_grammar_induction` accompanies the paper ["The grammar of emergent languages"](https://arxiv.org/abs/2010.02069).
+`emergent_grammar_induction` accompanies the paper ["The grammar of emergent languages"](https://www.aclweb.org/anthology/2020.emnlp-main.270.pdf); if you use this in your research, please cite:
+
+```
+@inproceedings{van-der-wal-etal-2020-grammar,
+    title = "The Grammar of Emergent Languages",
+    author = "van der Wal, Oskar  and
+      de Boer, Silvan  and
+      Bruni, Elia  and
+      Hupkes, Dieuwke",
+    booktitle = "Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP)",
+    year = "2020",
+    pages = "3339--3359",
+}
+```
 
 ## Table of contents
 * [Overview](#overview)
